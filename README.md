@@ -9,6 +9,7 @@
 * [لینک دانلود](#لینک-دانلود)
 * [نحوه ساخت فایل html](#نحوه-ساخت-فایل-html)
 * [نحوه ساخت فایل .html در vs code](#نحوه-ساخت-فایل-html-در-vs-code)
+* [شروع HTML](#شروع_HTML)
 
 ## مقدمه
 
@@ -98,5 +99,25 @@
 2. روی file، open folder:open_file_folder: می زنیم و به محلی که می خواهیم می رویم و select folder می زینم.
 3. از sidebar  به explore  می رویم و روی new file کلیک کنیم (از طریق دکمه بالا یا راست کلیک روی sidebar).
 4. و سپس تغییر اسم و پسوند:page_with_curl: می دهیم (NAME.html, NAME.htm).
+
+## شروع HTML
+
+در HTML با تگ های کار می کنیم.
+
+
+- <><br>
+تگ باز<br>
+Opening tag<br>
+- </><br>
+تگ بسته<br>
+Closing tag
+
+:pushpin:بین <> Element name قرار می گیرد.
+
+:pushpin:در بین تگ باز و بسته محتوا یا content قرار می گیرد.
+
+:pushpin:بعضی از تگ ها تگ باز و بسته دارند، بعضی ها ندارند.
+
+:pushpin:تگ ها می توانند تو در تو استفاده شوند.
 
 </div>
