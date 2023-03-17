@@ -40,5 +40,20 @@
 ## لینک دانلود
 
 [مرورگر Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/)
+
 [محیط کدنویسی VS Code](https://code.visualstudio.com/download)
+
+<details dir=”rtl”>
+
+<summary>
+نحوه فهمیدن اینکه ویندوزمان چند بیتی است
+</summary>
+
+1. به my computer می رویم.
+
+2. روی بخش خالی صفحه راست کلیک کرده و روی گزینه properties کلیک می کنیم.
+
+3. مقدار system type نشان می دهد سیستم:computer: شما چند بیتی است.
+
+</details>
 </div>
