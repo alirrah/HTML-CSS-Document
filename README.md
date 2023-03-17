@@ -6,6 +6,7 @@
 
 * [مقدمه](#مقدمه)
 * [ابزار مورد نیاز](#ابزار-مورد-نیاز)
+* [لینک دانلود](#لینک-دانلود)
 
 ## مقدمه
 
@@ -36,4 +37,8 @@
 1. مرورگر (Firefox, chrome, opera,…)
 2. محیط کدنویسی (Visual Studio Code, php storm,…)
 
+## لینک دانلود
+
+[مرورگر Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/)
+[محیط کدنویسی VS Code](https://code.visualstudio.com/download)
 </div>
