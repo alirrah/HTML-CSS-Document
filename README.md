@@ -8,6 +8,7 @@
 * [ابزار مورد نیاز](#ابزار-مورد-نیاز)
 * [لینک دانلود](#لینک-دانلود)
 * [نحوه ساخت فایل html](#نحوه-ساخت-فایل-html)
+* [نحوه ساخت فایل .html در vs code](#نحوه-ساخت-فایل-html-در-vs-code)
 
 ## مقدمه
 
@@ -82,14 +83,20 @@
 تغییر مرورگر پیش فرض
 </summary>
 
-* کلیک راست روی برنامه و open with را می زنیم.
-* و روی choose another app کلیک:computer_mouse: می کنیم.
-* مرورگر مورد نطر را انتخاب کرده و تیک always use this app to open .html files بزنید و روی ok:ok_hand: کلیک کنید.
+1. کلیک راست روی برنامه و open with را می زنیم.
+2. و روی choose another app کلیک:computer_mouse: می کنیم.
+3. مرورگر مورد نطر را انتخاب کرده و تیک always use this app to open .html files بزنید و روی ok:ok_hand: کلیک کنید.
 
 </details>
 
 * نوشتن کد های html تو محیط کدنویسی است.
 * نمایش نتیجه در مرورگر می باشد.
 
+## نحوه ساخت فایل .html در vs code
+
+1. محیط vs code را باز می کنیم.
+2. روی file، open folder:open_file_folder: می زنیم و به محلی که می خواهیم می رویم و select folder می زینم.
+3. از sidebar  به explore  می رویم و روی new file کلیک کنیم (از طریق دکمه بالا یا راست کلیک روی sidebar).
+4. و سپس تغییر اسم و پسوند:page_with_curl: می دهیم (NAME.html, NAME.htm).
 
 </div>
