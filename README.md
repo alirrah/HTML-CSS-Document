@@ -9,7 +9,7 @@
 * [لینک دانلود](#لینک-دانلود)
 * [نحوه ساخت فایل html](#نحوه-ساخت-فایل-html)
 * [نحوه ساخت فایل .html در vs code](#نحوه-ساخت-فایل-html-در-vs-code)
-* [شروع HTML](#شروع-html)\
+* [شروع HTML](#شروع-html)
 * [ساختار استاندار فایل HTML](#ساختار-استاندار-فایل-HTML)
 
 ## مقدمه
@@ -134,5 +134,31 @@ Closing tag
 
 :pushpin:تگ های داخل تگ head مربوط به تنظیمات صفحه هستند.
 :pushpin: تگ های داخل تگ body به کاربر نمایش داده می شوند.
+
+<details>
+
+<summary>
+تغییر اندازه فونت در VS Code
+</summary>
+
+1. به File Preferences Setting می رویم.
+2. از قسمت font size مقدار تغییر می دهیم.
+
+</details>
+
+<details>
+
+<summary>
+راحت تر نوشتن تگ های در VS Code
+</summary>
+
+در VS Code با نوشتن اسم تگ و فشار دادن دکمه tab تبدیل به تگ مورد نظر می شود.
+
+```
+html + press tab button => <html></html>
+```
+
+</details>
+
 
 </div>
