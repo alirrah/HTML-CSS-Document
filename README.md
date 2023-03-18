@@ -13,6 +13,8 @@
 * [ساختار استاندار فایل HTML](#ساختار-استاندار-فایل-HTML)
 * [فرم اصلی فایل HTML](#فرم-اصلی-فایل-HTML)
 * [تگ p](#تگ-p)
+* [نحوه تغییر عنوان صفحه](#نحوه-تغییر-عنوان-صفحه)
+* [محیط های کدنویسی وب](#محیط-های-کدنویسی-وب)
 
 ## مقدمه
 
@@ -212,5 +214,13 @@ paragraph => p
 	</body>	
 </html>
 ```
+
+## محیط های کدنویسی وب
+
+- Text Editor
+:diamond_shape_with_a_dot_inside:Notepad, sublime, vs code, nano,...
+
+- IDE
+:diamond_shape_with_a_dot_inside:Php storm, web storm,...
 
 </div>
