@@ -125,10 +125,10 @@ Closing tag
 
 ```html
 <html>
-<head>	
-</head>	
-<body>	
-</body>	
+    <head>	
+    </head>	
+    <body>	
+    </body>	
 </html>
 ```
 
@@ -159,6 +159,28 @@ html + press tab button => <html></html>
 ```
 
 </details>
+
+## فرم اصلی فایل HTML
+
+به مرورگر باید بگید دارید از چی استفاده می کنید پس در خط اول می نویسیم
+
+```html
+<!DOCTYPE html>
+```
+
+:pushpin:دقت کنید که تگ فوق تگ بسته ندارد.
+
+پس ساختار اصلی به فرم زیر می شود
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>	
+    </head>	
+    <body>	
+    </body>	
+</html>
+```
 
 
 </div>
