@@ -192,5 +192,25 @@ paragraph => p
 ```html
 <p></p>
 ```
+## نحوه تغییر عنوان صفحه
+
+داخل تگ head می رویم و عبارت زیر رو می نویسیم:arrow_down:
+
+```html
+<title>عنوان صفحه</title>
+```
+
+که بدین فرم در می آید
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TITLE</title>	
+	</head>
+	<body>
+	</body>	
+</html>
+```
 
 </div>
