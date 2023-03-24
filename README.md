@@ -429,6 +429,18 @@ href=”../mehdi/test.html”
 <p id=”part7”></p>
 ```
 
+ساخت لینک برای ایمیل زدن
+
+```html
+<a href=”mailto:EMAILADDRESS></a>
+```
+
+ساخت لینک به شماره تلفن
+
+```html
+<a href=”tel:PHONENUMBER”></a>
+```
+
 ## عکس
 
 برای قرار دادن عکس در فایل html از تگ img استفاده می کنیم و از attribute، src برای مشخص کردن مسیر عکس اسنفاده می کنیم.
@@ -458,6 +470,12 @@ href=”../mehdi/test.html”
 واحد پیش فرض برای اندازه گیری پیکسل است.
 
 اگر از یکی از attribute، width یا height استفاده کنیم، عکس به یک نسبت بزرگ یا کوچک می شود.
+
+لینک دادن به عکس
+
+```html
+<a href=”ADDRESS” target=”NEW_PAGE_OR_NOT”><img src=”ADDRESS” alt=”TEXT”></a>
+```
 
 ## لیست ها
 
@@ -496,22 +514,33 @@ href=”../mehdi/test.html”
 
 ```html
 <ul>
-	<li>Hello</li>
-	<li>
-		<ol>
-			<li>ali</li>
-			<li>reza</li>
+    <li>Hello</li>
+    <li>
+        <ol>
+            <li>ali</li>
+            <li>reza</li>
         </ol>
     </li>
     <li>bye</li>
-	<li>ali
-		<ul>
-			<li>ali</li>
-			<li>reza</li>
+    <li>ali
+        <ul>
+            <li>ali</li>
+            <li>reza</li>
         </ul>
     </li>
 </ul>
 ```
+
+حتما فاصله و تو رفتگی ها داخل کدنویسی رعایت کنید.
+
+
+مرتب سازی خودکار کد ها در VS Code
+
+یکی از دو راه زیر را انجام دهید
+
+- از روی صفحه کیبورد ctrl + shift + p را برنید و بعد بنویسید format document
+- از روی صفحه کیبورد alt + shift + f را بزنید.
+
 
 در HTML لیست توضیحی هم داریم ولی کاربردی نیست.
 
@@ -523,6 +552,8 @@ href=”../mehdi/test.html”
 	<dd>Something we watch</dd>
 </dl>
 ```
+
+سعی کنید خودتان به سوالاتتان برسید و جواب بدید و هیچ کاری آسان نیست، پس اگر به مشکل می خورید تسلیم نشوید.
 
 
 </div>
