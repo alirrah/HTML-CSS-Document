@@ -26,6 +26,7 @@
 * [لیست ها](#لیست-ها)
 * [جدول](#جدول)
 * [تفاوت تگ های inline و block](#تفاوت-تگ-های-inline-و-block)
+* [فرم](#فرم)
 
 ## مقدمه
 
@@ -399,6 +400,8 @@ h1: بررسی گوشی
 
 برای کامل کردن لینک در داخل تگ باز a بعد از حرف a فاصله می زنیم و می نویسیم href=”ADRESS” که به آن attribute گفته می شود.(ADDRESS مسیری است که در نظر داریم که باید جایگزین شود.)
 
+:paperclip:اگر آدرسی را نمی دانید به جاش # قرار دهید.
+
 ```html
 <a href=”https://google.com”>Click Me</a>
 ```
@@ -667,6 +670,244 @@ h1: بررسی گوشی
 تگ div برای دسته بندی بود و تگ block است.
 
 تگ span برای دسته بندی بود و تگ inline است.
+
+## فرم
+
+تگ form برای ساخت فرم استفاده می شود.
+
+از تگ input برای گرفتن ورودی استفاده می شود که از type ،attribute برای تعیین نوع آن استفاده می کنیم که یک تگ inline است.
+
+برای ساخت دکمه submit از کد زیر استفاده می کنیم.
+
+```html
+<input type=”submit” value=”TEXTOFBUTTON”>
+```
+
+(به جای TEXTOFBUTTON متنی که می خواهیم داخل دکمه نمایش داده شود را جایگزین می کنیم.)
+
+به متن هایی که قبل از input قرار می دهیم label می گویند.
+
+برای نوشتن label به طوری به که با کلیک روی متن input مدنظر انتخاب شود به صورت زیر عمل می کنیم
+
+1. یک تگ label باز و بسته کرده و در بین آن متن دلخواه مان را می نویسیم.
+2. از for ،attribute برای اسم دادن به label استفاده می کنیم.
+3. به تگ input متناظر همان اسمی که به for دادیم را به عنوان id قرار می دهیم.
+
+```html
+<label for=”TEXT”>name: </label>
+<input type=”text” id=”TEXT”>
+```
+
+از action ،attribute در تگ فرم برای فرستادن اطلاعات بعد از زدن دکمه submit استفاده می کنیم که نیاز به زبان برنامه نویسی مثل php, python, … است.
+
+دیگر attribute تگ method ،form است که دو مقدار GET و POST می گیرد.
+
+اگه مقدار target ،attribute در تگ form را مساوی _blank باشد، submit کد در صفحه جدید اتفاق می افتد.
+
+فرم ها در حالت پیشفرض حالت autocomplete دارند یعنی متن های قبلی را برای کامل کردن متن به ما پیشنهاد می دهند که برای برداشتن در تگ form مقدار autocomplete ،attribute را مساوی off قرار می دهیم. همین اتفاق را با قرار داخل تگ input هم می توان رغم زد.
+
+```html
+<form action="/action_page.php" method="post" autocomplete="off">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <input type="submit" value="Submit">
+</form>
+```
+
+مقدار مختلف type ،attribute
+
+1. text: متن
+2. password: رمز (کلمات معلوم نیست)
+3. submit: دکمه تایید و ارسال اطلاعات فرم
+4. reset: دکمه برای خالی کردن اطلاعات فرم
+5. email: برای گرفتن ایمیل (مثل متن است با این تفاوت که برای ایمیل نامعتبر خطا می دهد)
+6. number: فقط مقدار عددی می پذیرد
+7. url: برای ورودی گرفتن آدرس کامل
+8. color: برای گرفتن رنگ از کاربر
+9. file: برای آپلود فایل و گرفتن فایل از کاربر
+10. hidden: برای گرفتن و فرستادن اطلاعات که لازم نیست کاربر بداند مثل id کاربر
+
+اگر مقدار type مساوی submit یا reset باشد با استفاده از value ،attribute می توان متن داخل دکمه را تغییر داد.
+
+وقتی type=”number” باشد دو تا attribute دیگر هم می توانیم استفاده کنیم که min و max است که بازه عدد ورودی را مشخص می کند.
+
+```html
+<input type="text">
+<input type="password">
+<input type="submit" value="TEXT">
+<input type="reset" value="TEXT">
+<input type="email">
+<input type="number" min="NUMBER" max="NUMBER">
+<input type="url">
+<input type="color">
+<input type="file">
+<input type="hidden">
+```
+
+(به جایی TEXT متنی می خواهید و به جای NUMBER عددی که مدنظرتان هست را قرار می دهید و جایگزین می کنید.)
+
+از value ،attribute برای قراردهی اولیه فیلد ها استفاده می کنیم.
+
+```html
+<input type="text" vlue="TEXT">
+```
+
+(به جای TEXT متن مدنظرتان را جایگزین می کنید.)
+
+اگه به تگ input readonly ،attribute بدهیم دیگه قابل تغییر نیست و فقط قابل کپی کردن است.
+
+```html
+<input type="text" readonly>
+```
+
+اگه به input disable ،attribute بدهیم غیرفعال می شود و قابل کپی کردن نیست.
+
+```html
+<input type="text" disable>
+```
+
+از size ،attribute برای مشخص کردن تعداد کاراکتر ورودی کاربر استفاده می کنیم.
+
+```html
+<input type="text" size="NUMBER">
+```
+
+(به جای NUMBER عدد مدنظرتان را جایگزین می کنید.)
+
+از maxlength ،attribute برای مشخص کردن حداکثر تعداد کاراکتر ورودی کاربر استفاده می کنیم.
+
+```html
+<input type="text" maxlenght="NUMBER">
+```
+
+(به جای NUMBER عدد مدنظرتان را جایگزین می کنید.)
+
+از placeholder ،attribute برای نوشتن متن راهنمایی استفاده می کنیم.
+
+```html
+<input type="text" placeholder="TEXT">
+```
+
+(به جای TEXT متن مدنظرتان را جایگزین می کنید.)
+
+اگه به input required ،attribute بدهیم پر شدنش لازم می شود و در هنگام submit نمی تواند خالی باشد.
+
+```html
+<input type="text" required>
+```
+
+اگه به input autofocus ،attribute بدهیم وقتی صفحه بالا می آید به صورت پیش فرض انتخاب شده است.
+
+```html
+<input type="text" autofocus>
+```
+
+از radio button وقتی استفاده می کنیم از چند تا حالت فقط حق انتخاب یک مورد را داریم. مثل جنسیت، سن و...
+
+برای داشتن radio button از input با type=”radio” استفاده می کنیم. برای اینکه radio button هایی که در یک گروه هستند باهم باشند باید name ،attribute یکسانی داشته باشند.
+
+```html
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+```
+
+از checkboxes وقتی که امکان انتخاب چند مورد وجود داشته باشد استفاده می کنیم. مثل لیست خرید، علاقه مندی ها و...
+
+برای داشتن checkboxes از input با type=”checkbox” استفاده می کنیم. برای اینکه checkbox هایی که در یک گروه هستند باهم باشند باید name ،attribute یکسانی داشته باشند.
+
+```html
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+```
+
+برای داشتن select option از تگ select استفاده می کنیم. 
+
+بهتر است برای تگ attributes ،select های name و id را کامل کنیم.
+
+برای قرار دادن لیستی از آیتم ها در تگ select از تگ option استفاده می کنیم.
+
+یادتون نره برای تگ option value ،attribute را پر کنید.
+
+```html
+<select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+</select>
+```
+
+مقدار پیش فرض select option اولین option است ولی اگه به یکی از option ها selected ،attribute را بدهیم به عنوان مقدار پیش فرض select option قرار می گیرد.
+
+```html
+<select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab" selected>Saab</option>
+</select>
+```
+
+اگر بخواهیم مقدار پیش فرض نداشته باشه یک option با متن "--انتخاب کنید--" اول از همه اضافه می کنیم.
+
+```html
+<select name="cars" id="cars">
+    <option value="not_select">--انتخاب کنید--</option>
+</select>
+```
+
+اگر به تگ select، attribute multiple بدهیم امکان انتخاب چند تایی داریم که به جاش بهتر است از checkbox ها استفاده کنیم.
+
+```html
+<select name="cars" id="cars" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+</select>
+```
+
+از تگ textarea برای محیط متنی که قابلیت تغییر سایز دارد استفاده می کنیم. که attributes cols تعداد ستون و عرض را و attributes rows تعداد ردیف و ارتفاع را نشان می دهد.
+
+دارای attribute placeholder نیز هست.
+
+```html
+<textarea id="TEXT" name="TEXT" rows="NUMBER" cols="NUMBER" placeholder="TEXT"></textarea>
+```
+
+(به جایی TEXT متنی می خواهید و به جای NUMBER عددی که مدنظرتان هست را قرار می دهید و جایگزین می کنید.)
+
+از تگ button برای دکمه استفاده می کنیم که از نوع block است. که هم بیرون و هم داخل تگ form قابل استفاده است.
+
+```html
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+```
+
+از تگ fieldset استفاده می کنیم تا یه تقسیم بندی داخل فرم داشته باشیم.
+
+برای عنوان دادن به filedset از تگ legend در خط بعدی تگ باز filedset استفاده می کنیم.
+
+```html
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+```
 
 
 </div>
