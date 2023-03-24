@@ -24,6 +24,7 @@
 * [لینک](#لینک)
 * [عکس](#عکس)
 * [لیست ها](#لیست-ها)
+* [جدول](#جدول)
 
 ## مقدمه
 
@@ -585,6 +586,73 @@ h1: بررسی گوشی
 ```
 
 :bell:سعی کنید خودتان به سوالاتتان برسید و جواب بدید و هیچ کاری آسان نیست، پس اگر به مشکل می خورید تسلیم نشوید.
+
+## جدول
+
+از تگ table برای کشیدن جدول استفاده می کنیم.
+
+از تگ tr برای ساخت سطر و برای ساخت سلول از تگ td استفاده می کنیم.
+
+برای ساخت header از تگ th استفاده می کنیم.
+
+```html
+<table>
+	<tr>
+		<th>Name></th>
+		<th>Job</th>
+	</tr>
+	<tr>
+		<td>Alireza</td>
+		<td>programmer</td>
+	</tr>
+</table>
+```
+
+برای یکی کردن چند تا سلول که در یک ستون قرار دارد، در تگ td از rowspan=”NUMBER” ،attribute استفاده می کنیم و NUMBER تعداد سطر یکسان است.
+
+```html
+<table>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+        <th>Savings for holiday!</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+        <td rowspan="2">$50</td>
+    </tr>
+</table>
+```
+
+برای یکی کردن چند تا سلول که در یک سطر قرار دارد، در تگ td از colspan=”NUMBER” ،attribute استفاده می کنیم و NUMBER تعداد ستون یکسان است.
+
+```html
+<table>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td colspan="2">Sum: $180</td>
+    </tr>
+</table>
+```
+
+از تگ table به تازگی در ساخت صفحات وب استفاده نمی شود.
+
+از تگ caption بعد از تگ باز table برای توضیح دادن و عنوان جدول استفاده می کنیم.  
+
+```html
+<table>
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+</table>
+```
+
 
 
 </div>
