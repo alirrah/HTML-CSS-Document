@@ -41,6 +41,7 @@
 * [عرض و ارتفاع در css](#عرض-و-ارتفاع-در-css)
 * [بوردر](#بوردر)
 * [استایل های متن](#استایل-های-متن)
+* [حاشیه](#حاشیه)
 
 ## مقدمه
 
@@ -1432,6 +1433,48 @@ p{
 با سرچ [text shadow generator](https://www.google.com/search?q=text+shadow+generator) می توانیم سایه متن را راحت بسازیم. 
 
 فرق rgba با rgb در این است که rgba یک عدد چهارمی بین 0 و 1 دارد که opacity را نشان می دهد.
+
+## حاشیه
+
+با خصیصه margin فاصله از بیرون را مشخص می کنیم.
+
+همچنین margin-top, margin-left, margin-right, margin-bottom داریم.
+
+با خصیصه padding فاصله از داخل را مشخص می کنیم.
+
+همچنین padding-top, padding-left, padding-right, padding-bottom داریم.
+
+نحوه مقدار دهی که border ها داشتیم برای margin و padding هم استفاده می شود.
+
+```css
+div{
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+}
+
+p{
+    margin: 10px 20px 30px;
+    padding: 10px 20px 30px;
+}
+
+a{
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+li{
+    margin: 10px;
+    padding: 10px;
+}
+```
+
+<center>
+
+<img src="./Box-model.svg" alt="box module">
+
+</center>
+
+می توانید برای درک بهتر box model را بررسی کنید.
 
 
 </div>
