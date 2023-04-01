@@ -39,6 +39,7 @@
 * [کامنت گذاری در css](#کامنت-گذاری-در-css)
 * [زنگ ها در css](#رنگ-ها-در-css)
 * [عرض و ارتفاع در css](#عرض-و-ارتفاع-در-css)
+* [بوردر](#بوردر)
 
 ## مقدمه
 
@@ -1254,6 +1255,98 @@ TAGNAME#IDNAME
 بعد از نوشتن عبارت فوق کلید tab را می زنید و تگ با ای دی مدنظر ساخته می شود.
 
 </details>
+
+## بوردر
+
+با خصیصه border-style استایل بوردر را مشخص می کند.
+
+با خصیصه border-top-style استایل بوردر سمت بالا را مشخص می کند.
+
+با خصیصه border-left-style استایل بوردر سمت چپ را مشخص می کند.
+
+با خصیصه border-right-style استایل بوردر سمت راست را مشخص می کند.
+
+با خصیصه border-bottom-style استایل بوردر سمت پایین را مشخص می کند.
+
+که اگر بهش مقدار solid را بدهیم خط ساده برایمان می کشد.
+
+اگر بهش مقدار dotted را بدهیم نقطه برایمان می کشد.
+
+اگر بهش مقدار dashed را بدهیم خط های فاصه دار برایمان می کشد.
+
+اگر بهش مقدار double را بدهیم دو خطی برایمان می کشد.
+
+اگر بهش مقدار groove را بدهیم حالت قاب برایمالن می کشد.
+
+و بقیه مقادیر مثل ridge, inset, outset,…
+
+اگر none بدهیم بوردر پاک می شود.
+
+```css
+div{
+    border-top-style: solid;
+    border-left-style: dotted;
+    border-bottom-style: groove;
+    border-right-style: inset;
+}
+```
+
+با خصیصه border-color رنگ بوردر را برایمان مشخص می کند.
+
+با خصیصه border-top-color رنگ بوردر سمت بالا را برایمان مشخص می کند.
+
+با خصیصه border-left-color رنگ بوردر سمت چپ را برایمان مشخص می کند.
+
+با خصیصه border-right-color رنگ بوردر سمت راست را برایمان مشخص می کند.
+
+با خصیصه border-bottom-color رنگ بوردر سمت پایین را برایمان مشخص می کند.
+
+```css
+div {
+  border-top-color: coral;
+  border-left-color: red;
+  border-bottom-color: green;
+  border-right-color: blue;
+}
+```
+
+با خصیصه border-width ضخامت بوردر را نمایش می دهد.
+
+با خصیصه border-top-width ضخامت بوردر سمت بالا را نمایش می دهد.
+
+با خصیصه border-left-width ضخامت بوردر سمت چپ را نمایش می دهد.
+
+با خصیصه border-right-width ضخامت بوردر سمت راست را نمایش می دهد.
+
+با خصیصه border-bottom-width ضخامت بوردر سمت پایین را نمایش می دهد.
+
+```css
+div{
+    border-top-width: 20px;
+    border-left-width: 2px;
+    border-bottom-width: 5px;
+    border-right-width: 10px;
+}
+```
+
+می توانیم به border-width, border-style, border-color همزمان 4 تا مقدار بدهیم که به صورت TOP RIGHT BOTTOM LEFT(ساعتگرد) اعمال می شود.
+
+می توانیم به border-width, border-style, border-color همزمان 2 تا مقدار بدهیم که به صورت TOP_AND_BOTTOM RIGHT_AND_LEFT(بالا پایین و چپ راست) اعمال می شود.
+
+اگر برای چپ مقداری مشخص نکنیم از روی راست استایل ها را می گیرد.
+
+به جای همه border-width, border-color, border-style می توانیم از border استفاده کنیم که اولش اندازه، بعدش استایل و در آخر رنگ  (SIZE STYLE COLOR) را بهش می دهیم.
+
+همچنین border-left, border-right, border-top, border-bottom داریم که فقط برای یک سمت استایل ها را تنظیم می کند.
+
+```css
+div{
+    border-top: 20px solid coral;
+    border-left: 2px dotted red;
+    border-bottom: 5px groove green;
+    border-right: 10px inset blue;
+}
+```
 
 
 </div>
