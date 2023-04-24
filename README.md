@@ -411,6 +411,17 @@ h1: بررسی گوشی
 
 :paperclip:تگ address برای آدرس دادن (مکان، تلفن:phone:، ایمیل:e-mail:، نام و ...) استفاده می شود.
 
+:paperclip:تگ header برای هدر صفحه است.
+
+:paperclip:تگ nav برای منو سایت است.
+
+:paperclip:تگ section بخش بندی صفحه سایت است.
+
+:paperclip:تگ article مقالات سایت است.
+
+:paperclip:تگ aside سایدبار سایت است.
+
+:paperclip:تگ footer فوتر سایت است
 
 ```html
 <strong></strong>
@@ -418,6 +429,12 @@ h1: بررسی گوشی
 <mark></mark>
 <del></del>
 <ins></ins>
+<header></header>
+<nav></nav>
+<section></section>
+<article></article>
+<aside></aside>
+<footer></footer>
 ```
 
 تگ معناگرا (semantic elements or tags) به موتور جستجو:mag: و مرورگر پیام می دهد که این متن مهم است و توجه کنید.
@@ -1260,6 +1277,14 @@ p{
 }
 ```
 
+برای اندازه علاوه بر px می توانیم از % هم استفاده کنیم.
+
+```css
+li{
+    width: 60%;
+}
+```
+
 <details>
 
 <summary>
@@ -1971,6 +1996,12 @@ font file
 وقتی می خواهید به تگی position: absolute بدهید، بهتر است به تگ پدرش position: relative بدهید تا نسبت به آن جا به جا شود.
 
 الکی خط کد زیاد نکنید؛ پس کد تکراری تا می توانید نزنید و کد های تکراری را یکی کنید.
+
+برای دادن چند تا کلاس به یک تگ اسم کلاس ها را با فاصله از هم جدا می کنیم.
+
+```html
+<div class="box box-1"></div>
+```
 
 ## ترازبندی عمودی
 
