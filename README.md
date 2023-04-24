@@ -72,6 +72,7 @@
 * [فونت آیکن](#فونت-آیکن)
 * [after & before](#after--before)
 * [not](#not)
+* [منو بازشونده با html & css](#منو-بازشونده-با-html--css)
 
 ## مقدمه
 
@@ -1933,6 +1934,53 @@ div:hover{
 }
 ```
 
+برای ساخت انیمیشن دلخواه از keyframes استفاده می کنیم.
+
+```css
+@keyframes NAME{
+    from{
+    }
+    to{
+    }
+}
+```
+
+بعد هرجایی که لازم بود بهش خصیصه animation-name را می دهیم با اسم keyfames مان.
+
+با خصیصه animation-duration مدت زمان انیمیشن را مشخص می کنیم.
+
+با خصیصه animation-iteration-count تعداد تکرار انیمیشن را مشخص می کنیم که اگر برایر infinite قرار دهیم یعنی بی نهایت بار اجرا شود.
+
+با خصیصه animation-delay تاخیر انیمیشن را مشخص می کنیم.
+
+```css
+div{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+```
+
+به جای موارد بالا می توان از خصیصه animation استفاده کرد.
+
+```css
+div{
+    animation: 0.5s rotate infinite;
+}
+```
+
+به جای  from و to می توانیم از درصد استفاده کنیم.
+
+```css
+@keyframes{
+    0%{
+    }
+    100%{
+    }
+}
+```
+
 ## اندازه تگ هایی که عرض و ارتفاع مشخص دارند
 
 :interrobang:وقتی به تگی padding و border می دهیم به طول و عرض آن اضافه می شود.
@@ -2049,6 +2097,18 @@ font file
 
 اگر کد ها یادتان می رود عادی است فقط تمرین کنید، پروژه بزنید و سرچ کنید.
 
+اگر خواهید ارتفاع تگی را 100% کنید علاوه بر دادن height: 100% به آن تگ به html و body هم باید height: 100%; را بدهیم.
+
+برای متن تایپینگ از type js استفاده می کنیم.
+
+از کد js قرار اجرا شود اخر فایل قبل از تمام شدن تگ body قرار می دهیم.
+
+برای کاروسل از کتابخانه slick استفاده می کنیم.
+
+برای ارجعیت دادن از !important استفاده می کنیم.
+
+تو آدرس ایمیل به جای @ از [at] و به جای . از [dot] ااستفاده کنید.
+
 ```css
 *{
 }
@@ -2164,6 +2224,23 @@ a:not(.active){
 ```
 
 یعنی لینک هایی که کلاس active ندارند.
+
+## منو بازشونده با html & css
+
+```css
+.subUl{
+    position: absolute;
+    display: none;
+}
+
+.sunLi{
+    display: inline-block;
+}
+
+.liHasDropdwon:hover .subUl{
+    display: block;
+}
+```
 
 
 </div>
