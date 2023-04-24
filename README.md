@@ -69,6 +69,7 @@
 * [اضافه کردن فایل css به هم](#اضافه-کردن-فایل-css-به-هم)
 * [اولین و آخرین فرزند](#اولین-و-آخرین-فرزند)
 * [ایده یابی](#ایده-یابی)
+* [فونت آیکن](#فونت-آیکن)
 
 ## مقدمه
 
@@ -1873,11 +1874,14 @@ span{
 
 خصیصه background-size اندازه عکس پس زمینه را مشخص می کند که اگر مقدارش برابر cover باشد کل صفحه را پوشش می دهد.
 
+با استفاده از background-attachment: fixed; پس زمینه را ثابت می کنیم حتی در حالات اسکرول صفحه.
+
 ```css
 div{
     background-image: url("ADDRESS");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 ```
 
@@ -2106,6 +2110,33 @@ CLASSNAME:last-chlid{
 
 ## ایده یابی
 سایت [dribbble](https://dribbble.com/) برای ایده گرفتن سایت خوبی است.
+
+## فونت آیکن
+
+از فونت ایکن برای قرار دادن ایکن استفاده کنید.
+
+برای فونت ایکن [font awesome](https://fontawesome.com/) گزینه خوبی است.
+
+مزیت های font icon نسبت به عکس:
+
+- ادیت راحت تر است.
+- کاهش ترافیک سایت مان و سرعت لود بهتر می شود.
+
+اول فونت ایکن را دانلود می کنیم بعد فایل all.min.js را به پروژه مان اضافه می کنیم.
+
+```html
+<script src=”ADDRESS” defer></script>
+```
+
+در کد بالا defer یعنی بعد از لود شدن سایت این اسکریپت را اجرا کن.
+
+ایکن های free font awesome سه دسته هستند solid, regular, brand.
+
+اگر با Fas در font awesome شروع شود یعنی ایکن مان solid است.
+
+اگر با Far در font awesome شروع شود یعنی ایکن مان regular است.
+
+اگر با Fab در font awesome شروع شود یعنی ایکن مان brand است.
 
 
 </div>
